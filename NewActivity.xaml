@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="732,600.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="732,1037.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:ummm="clr-namespace:UiPath.MicrosoftOffice365.Mail.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -42,6 +42,13 @@
       <x:String>System.Runtime.CompilerServices</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.DataService.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Shared.Services.Graph.Mail.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Mail.Models</x:String>
+      <x:String>UiPath.Platform</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -101,20 +108,26 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="416,498.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="416,972.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="umm:Office365Message" Name="out_Email" />
+      <Variable x:TypeArguments="ummm:O365MailLocalItem" Name="down_Email" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Hello World!&quot;]" />
-    <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AQMkADkzOGVhM2EzLTRhN2QtNDdiOS1iZGY2LTQzZTk1YzJiMmIzZgAuAAAD7m4bsnHgU0KEOu6N6myQAAEAcYxz33Myn0mdhIYW9_x0dwAAAgEMAAAA" ConnectionId="ca8c0b4d-8cbc-4297-98ca-d6cb9f0ef435" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="353.6,227.2" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="False" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+    <ui:LogMessage DisplayName="Start Log" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Start Message&quot;]" />
+    <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AQMkADkzOGVhM2EzLTRhN2QtNDdiOS1iZGY2LTQzZTk1YzJiMmIzZgAuAAAD7m4bsnHgU0KEOu6N6myQAAEAcYxz33Myn0mdhIYW9_x0dwAAAgEMAAAA" ConnectionId="ca8c0b4d-8cbc-4297-98ca-d6cb9f0ef435" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="353.6,244" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="False" Result="[out_Email]" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
       <umam:GetNewestEmail.Filter>
         <umamf:MailFilterCollection LogicalOperator="And">
           <umamf:MailFilterCollection.Filters>
-            <umamf:MailFilterElement DateValue="{x:Null}" Criteria="Attachment" DateOperator="NewerThan" InStringValue="luan.hietbrink@gmail.com" StringOperator="NotContains" TypeOperator="Equals" TypeValue="Email" />
+            <umamf:MailFilterElement DateValue="{x:Null}" Criteria="From" DateOperator="NewerThan" InStringValue="engelbrecht.hanu@gmail.com" StringOperator="NotContains" TypeOperator="Equals" TypeValue="Email" />
           </umamf:MailFilterCollection.Filters>
         </umamf:MailFilterCollection>
       </umam:GetNewestEmail.Filter>
@@ -126,5 +139,7 @@
         </usau:BackupSlot>
       </umam:GetNewestEmail.FolderIdBackup>
     </umam:GetNewestEmail>
+    <umam:DownloadEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" ConnectionId="ca8c0b4d-8cbc-4297-98ca-d6cb9f0ef435" DisplayName="Download Email" Email="[out_Email]" sap:VirtualizedContainerService.HintSize="353.6,192.8" sap2010:WorkflowViewState.IdRef="DownloadEmailConnections_1" NewResult="[down_Email]" UseConnectionService="True" />
+    <ucas:UploadStorageFile Destination="{x:Null}" Path="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Upload Storage File" FileResource="[down_Email]" sap:VirtualizedContainerService.HintSize="353.6,264.8" sap2010:WorkflowViewState.IdRef="UploadStorageFile_2" StorageBucketName="EmailFile" />
   </Sequence>
 </Activity>
