@@ -4,5 +4,30 @@
   "HelpLink": null,
   "Color": null,
   "OriginalIconFileName": null,
-  "Arguments": []
+  "Arguments": [
+    {
+      "Name": "GetNewestEmail_1_Connection0",
+      "DisplayName": "GetNewestEmail_1_Connection",
+      "Category": null,
+      "Tooltip": "Get Newest Email",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GetNewestEmail_1_Connection0_Property0_Metadata",
+      "DisplayName": "GetNewestEmail_1_Email folder",
+      "Category": null,
+      "Tooltip": "Get Newest Email",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 2,
+      "DataSourceItems": null
+    }
+  ]
 }
