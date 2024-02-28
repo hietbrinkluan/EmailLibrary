@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="732,2015.1999999999998" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="732,2077.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -123,13 +123,14 @@
       <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="592,1950.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="592,2012.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="umm:Office365Message" Name="out_Email" />
       <Variable x:TypeArguments="x:String" Name="sDestination" />
       <Variable x:TypeArguments="x:String" Name="sBucketName" />
       <Variable x:TypeArguments="x:String" Name="sFileName" />
       <Variable x:TypeArguments="snm:MailMessage" Name="ConvertedEmail" />
+      <Variable x:TypeArguments="x:String" Name="sBucketSaveAs" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -137,9 +138,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Start Log" sap:VirtualizedContainerService.HintSize="529.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start Message&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="529.6,220" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="529.6,282.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
-        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
             <ui:AssignOperation.To>
               <OutArgument x:TypeArguments="x:String">[sBucketName]</OutArgument>
@@ -162,6 +163,22 @@
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
               <InArgument x:TypeArguments="x:String">["C:\Users\Sapconet\OneDrive - Sapconet (Pty) Ltd\Documents\SAPPI\EmailIntegration\Emails"]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sFileName]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">["C:\Users\Sapconet\OneDrive - Sapconet (Pty) Ltd\Documents\SAPPI\EmailIntegration\Emails\" + ConvertedEmail.Subject.ToString + ".eml"]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sBucketSaveAs]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">["C:\Users\Sapconet\OneDrive - Sapconet (Pty) Ltd\Documents\SAPPI\EmailIntegration\Emails\" + ConvertedEmail.Subject.ToString + ".eml"]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
@@ -208,7 +225,7 @@
                 <InArgument x:TypeArguments="snm:MailMessage">[CType(out_Email, System.Net.Mail.MailMessage)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:SaveMail DisplayName="Save Mail Message" FilePath="[&quot;C:\Users\Sapconet\OneDrive - Sapconet (Pty) Ltd\Documents\SAPPI\EmailIntegration\Emails\&quot; + ConvertedEmail.Subject.ToString + &quot;.eml&quot;]" sap:VirtualizedContainerService.HintSize="433.6,129.6" sap2010:WorkflowViewState.IdRef="SaveMail_3" MailMessage="[ConvertedEmail]" />
+            <ui:SaveMail DisplayName="Save Mail Message" FilePath="[sFileName]" sap:VirtualizedContainerService.HintSize="433.6,129.6" sap2010:WorkflowViewState.IdRef="SaveMail_3" MailMessage="[ConvertedEmail]" />
             <ui:LogMessage DisplayName="Convert Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Mail file converted to MailMessage and downloaded&quot;]" />
           </Sequence>
         </ActivityAction>
@@ -219,7 +236,7 @@
         </InArgument>
       </umab:ExchangeApplicationCard.TenantId>
     </umab:ExchangeApplicationCard>
-    <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[&quot;\&quot; + ConvertedEmail.Subject.ToString + &quot;.eml&quot;]" DisplayName="Upload to EmailFiles" sap:VirtualizedContainerService.HintSize="529.6,281.6" sap2010:WorkflowViewState.IdRef="UploadStorageFile_3" Path="[&quot;C:\Users\Sapconet\OneDrive - Sapconet (Pty) Ltd\Documents\SAPPI\EmailIntegration\Emails\&quot; + ConvertedEmail.Subject.ToString + &quot;.eml&quot;]" StorageBucketName="[sBucketName]" />
-    <ui:LogMessage DisplayName="Upload Log Message" sap:VirtualizedContainerService.HintSize="529.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;File uploaded to storag bucket&quot;]" />
+    <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[sBucketSaveAs]" DisplayName="Upload to EmailFiles" sap:VirtualizedContainerService.HintSize="529.6,281.6" sap2010:WorkflowViewState.IdRef="UploadStorageFile_3" Path="[sFileName]" StorageBucketName="[sBucketName]" />
+    <ui:LogMessage DisplayName="Upload Log Message" sap:VirtualizedContainerService.HintSize="529.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;File uploaded to storage bucket&quot;]" />
   </Sequence>
 </Activity>
