@@ -20,10 +20,10 @@
       "Path": "NewActivity.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "sFileName&Sequence_1",
+        "sPath&Sequence_1",
         "out_Email&Sequence_1",
         "sDestination&Sequence_1",
-        "sBucketName&Sequence_1",
-        "sFileName&Sequence_1",
         "ConvertedEmail&Sequence_1",
         "sBucketSaveAs&Sequence_1"
       ],
