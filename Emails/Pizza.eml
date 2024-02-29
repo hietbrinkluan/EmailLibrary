@@ -1,0 +1,125 @@
+Uid: =?utf-8?q?AAMkADkzOGVhM2EzLTRhN2QtNDdiOS1iZGY2LTQzZTk1YzJiMmIzZgBGAAAAA?=
+ =?utf-8?q?ADubhuyceBTQoQ67o3qbJAABwBxjHPfczKfSZ2Ehhb37HR3AAAAAAEMAABxjH?=
+ =?utf-8?q?PfczKfSZ2Ehhb37HR3AAA9NmW1AAA=3D?=
+Received: by mail-ot1-f52.google.com with SMTP
+	id 46e09a7af769-6e49812ba77so263607a34 .2        for
+	<luan.hietbrink@sapconet.co.za>; Wed, 28 Feb 2024 22:59:51 -0800 (PST)
+Authentication-Results:
+	spf=pass (sender IP is 209.85.210.52) smtp.mailfrom=gmail.com;
+	dkim=pass (signature was verified) header.d=gmail.com;
+	dmarc=pass action="none" header.from=gmail.com; compauth=pass reason="100"
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.210.52 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.210.52; helo=mail-ot1-f52.google.com; pr=C
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20230601;
+	t=1709189989; x=1709794789; darn=sapconet.co.za;
+	h=to:subject:message-id:date:from:mime-version:from:to:cc:subject:date:
+	message-id:reply-to;
+	bh=4kQyeFlbaRXQQ2gsZsG0kY/EQLVs8LkdtiG24cphbpY=;
+	b=PFBEecOJYYsem0POEMxDjNXG/3sKKP5qj7i/cCyCxcscfKJlIaXuGZ/dsJv4+AH0i/laFhSKfbo
+	zcW2ZKmKTjfffay91qOR+4ZsFLvSByhO9jm8eA7OxiinTy+IzYtI/qJeBApVW3VSFFkgb0YEP8dx8
+	cr8FV7w+IdJ/tRCOddDIhihFjgXc/1GVpCSrfGGy3GbThmrFy39KPUpbSl73zyRu89rFKqmR4FDJk
+	eis1w7NIKw+MsiKZFHXVydwas5u+SfL4LVJp4wqc/INbFlBL9T20f8/TQDelOg0CH018xtpDYiB8Z
+	qwqadedNu27KD7CIgfSNLkyvmUBC4fEJmoTA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20230601; t=1709189989; x=1709794789;       
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state        
+ :from:to:cc:subject:date:message-id:reply-to;       
+ bh=4kQyeFlbaRXQQ2gsZsG0kY/EQLVs8LkdtiG24cphbpY=;       
+ b=lRZ46/c9AlW3EsL1gkcVNKANYGf4h/9bCQrG4zRDFcso6p5MuEBe/3ni00KVwCsq9y        
+ Q2LDuGRr9/N47SS9sBHphk20tQS3js6GyAd8yY1mnc/RhS1fag/Jhf/VuRgthopMT8WM        
+ wcDARNbMIS0knofQjEMa75XdFuWWGF0G28742Qew01zES0AVeO4wW8ljUxbIu0ebxD0S        
+ L2wZj9ZsyYBdPwvHpDhnug4jAw5YedapRzCCZrn43aAWtbkzfCZNbfruByWY5sah+xUZ        
+ kf5dYOFcHkX4UOy0b9ggdNnCuzOdY9q47L/Gdyyt7HYZ2/4SUJN7KA8K3PVnQNPhfs7N        
+ WNUQ==
+X-Gm-Message-State: AOJu0Yy1W7FNCmAu/Y3VtnIDDSwyIVGc1sNeeD7/Nb/CmwCQcbLrmMkn
+	zSvrP+dbIsowygMMgKDjF8WqYZqOKlvEi7qVUC8JzyPMRKptB7JTqjjC1D6aT+ZIk75bza+YMdv
+	qHnwAg793ShqYT6BmdchJugNV8UkZEUl3
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IGUAwTo3gM9veIf0WYi0LatAsi3lJz=2F18nvN7F529hG1Ua5rEJsKlGLZ?=
+ =?utf-8?q?UGtBTjPr3ot95n7TaWf2nTEe7+HszA=3D?=
+X-Received: by 2002:a9d:4b02:0:b0:6e4:adfb:ca16 with SMTP id
+ q2-20020a9d4b02000000b006e4adfbca16mr1102784otf.38.1709189988971; Wed, 28 Feb
+ 2024 22:59:48 -0800 (PST)
+MIME-Version: 1.0
+From: Luan Hietbrink <luan.hietbrink@gmail.com>
+Date: Thu, 29 Feb 2024 08:59:37 +0200
+Message-ID: <CADjs+e-N7vhEJimR_7ihyKCGnSPjMGseR2Gqu=u4yC9oR-x+PQ@mail.gmail.com>
+Subject: Pizza
+To: Luan Hietbrink <Luan.Hietbrink@sapconet.co.za>
+Return-Path: luan.hietbrink@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Feb 2024 06:59:51.8946
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 646a8d92-f7a9-48ed-0fae-08dc38f406ea
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 1bedeeba-8b6d-4e9b-b4a4-18bca8bcee90:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CPT0EPF0000071E:EE_|JNAP275MB2260:EE_|JNAP275MB0558:EE_
+X-MS-Exchange-Organization-AuthSource: CPT0EPF0000071E.ZAFP275.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 646a8d92-f7a9-48ed-0fae-08dc38f406ea
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report: =?utf-8?q?CIP=3A209=2E85=2E210=2E52=3BCTRY=3AUS=3BLANG=3Anl=3BSCL=3A1=3BSRV=3A=3BIPV=3ANLI=3BSFV=3ANSPM?=
+ =?utf-8?q?=3BH=3Amail-ot1-f52=2Egoogle=2Ecom=3BPTR=3Amail-ot1-f52=2Egoogle=2Ecom=3BCAT=3ANO?=
+ =?utf-8?q?NE=3BSFS=3A=2813230031=29=3BDIR=3AINB=3B?=
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Feb 2024 06:59:51.5821 (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 646a8d92-f7a9-48ed-0fae-08dc38f406ea
+X-MS-Exchange-CrossTenant-Id: 1bedeeba-8b6d-4e9b-b4a4-18bca8bcee90
+X-MS-Exchange-CrossTenant-AuthSource: CPT0EPF0000071E.ZAFP275.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: JNAP275MB2260
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2882288
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7316.039
+X-Microsoft-Antispam-Mailbox-Delivery: =?utf-8?q?ucf=3A0=3Bjmr=3A0=3Bauth=3A0=3Bdest=3AI=3BENG=3A=28910001=29=28944506478=29=28944626604=29=28?=
+ =?utf-8?q?920097=29=28930097=29=28140003=29=3B?=
+X-Microsoft-Antispam-Message-Info: =?utf-8?q?XREDz50VCQusK8YxPOBpaHy1icF7rcGnxNPo7D9y0JVIUw=2FWVTDydkBvaCqX0?=
+ =?utf-8?q?qdpBa+fk9cmrq741vpIoC2h+IX9n7wjAw6jcQ1XfNQPJm6UkKJ=2FkYxO7t1Xry?=
+ =?utf-8?q?iRkv6F=2FyLruHCtMvhXwGOYnHeHqmwFWOk34qiIYqEIxTVdvAc2QB0rLJfui=2FL?=
+ =?utf-8?q?nEgG5Q3Q9KQQ4d5c2E6HJEJOfjkQRibEEkkNd=2FXFeNkKZ+Mw6qrD9NVc2RFNv?=
+ =?utf-8?q?oFiRsC5kyaNiqqAhOFhynis4+h9wzrMVNG3OT=2F+oOy5UqiSKOMHeoiEr7Vq4X?=
+ =?utf-8?q?MjtCtdPoEjv5z=2Fb814BYWK=2F+VptQ9JupLfl0QMNYrTHHeAbXBMmUaVPiCCJev?=
+ =?utf-8?q?NMKAJslNU1+uyXEHrOKgXO=2F48uID0qtHyiMXVMEXXcGKOSAvFkK7bEnmHOyia?=
+ =?utf-8?q?y9Hf8ANHKYjOKO+WLhNTDDoJWToTbsrbRp7eb=2FTtYGU4iktdvE1srj5VIPfVN?=
+ =?utf-8?q?bBt89deD0Gi=2FVKUHij3+13yGzf2kcaxMLvOIUiXly+cbVrTEW5jdEFiPkj5hN?=
+ =?utf-8?q?f2DqZAo75QXLTDNoOlWu3dNl2859PTHQ672xqPzWtz0+ksZrRq0sdFTwDAzpA?=
+ =?utf-8?q?c88SqCq0+DLEeU0mki4KEx+hHUkaWDrKCRO7I9xIEDlqPD87DGbkWAQ1O2EmT?=
+ =?utf-8?q?XaBZI68W5qogfvC9Fq+rgUEBbpkSzFeIJtLA0PBHyB7Fu3=2FQixTMKykMWza6c?=
+ =?utf-8?q?RpkXQ3I3wzbq42y0d=2FrDrk8VjatIScljR4CYdXBHv48445mX+Qt=2F=2FmOiUC0DS?=
+ =?utf-8?q?BbUPuknXwCnuLvQulpIXLJW0482XtGPK7bBptMagVqh=2FXcOcbX7qsqrdTiy=2Fu?=
+ =?utf-8?q?xJWg9ztP=2FaFBBHd0qCkxYN1ED5ElZdSeA5syWWwtaqtEtjRodr9yQ4T4mwHWi?=
+ =?utf-8?q?+B0d=2FAxbA+UD1dK=2FEt4gjc1cHLwvxHQL9kck2a+yuAV13SaYDvoL8=2FNdEfHOv?=
+ =?utf-8?q?n0N=2Fdt8XIlKJC3NnPvD1nDS6=2FXD+V+N7LrqXP7Uh+iZzgl+LZJwk7RkS1Mvk0?=
+ =?utf-8?q?asgwEN1=2FTzDiU=2FQD00d+6NgnaxkLP5oWp9Nr88I3a5CXJy6rx=2FaDE5VhA=2Fy74?=
+ =?utf-8?q?Amxrr8UiMMvkWFjBNtY7OQUtZXkrriwMQFir9rBpbszekyB3Fxakm3+OuCJtW?=
+ =?utf-8?q?RKGTf1ot3R8oCPCUSoigbqtkd9VMJzFqf9b2BjluL6CrNpe+x7VZ8OdAoj=2FfY?=
+ =?utf-8?q?CZ3OWmLsIe23+TknbDjezssM4peXt6a=2FaSbtzpemSKY1HU2r6DH=2FqxzSXF6RR?=
+ =?utf-8?q?EjawADmrAb8fFcZ8MCJ9r1THjS8IDKpnV=2FkvFs96AZTfjUN2FTjrFVA4wdjFl?=
+ =?utf-8?q?x9OIRMJy9SWmJKSbCavpRs9AMvFmJRiDVhHXUSzIo=2F1MATxemVH+5hJbo=2F7GV?=
+ =?utf-8?q?VrX1ooxokSsI7Zqaah6tx6mGiHhoxAlvdO9Ewyty4df5ygeaJxHa401FEXv9X?=
+ =?utf-8?q?RSIk0BBOeoV8gv96cCeE2m3R1De+F3vs9UFf3aDfuUKTltssIp0Mje6TmHLJ+?=
+ =?utf-8?q?lTW=2FpaZVKWUSd4KwRVph9DkE8QzDYQc2mZjj1RfS4rtELX8B2SZIcuTFRRkDU?=
+ =?utf-8?q?4nkwIuGJ14qEyQSZ91N3J8MzHZEWsf1+k2DVf1oaRNFaSKyinNBxtCj=2FqjUGR?=
+ =?utf-8?q?ZM14CJy5prtu40Rm8?=
+Sender: Luan Hietbrink <luan.hietbrink@gmail.com>
+Content-Type: multipart/alternative; boundary="=-N1JClhfRvlA9vMoo7kZwTw=="
+
+--=-N1JClhfRvlA9vMoo7kZwTw==
+Content-Type: text/plain; charset=us-ascii
+
+Lekker pizza
+
+--=-N1JClhfRvlA9vMoo7kZwTw==
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+Content-Id: <5013c4f1-92c0-40ee-bc7f-33f712ddab24>
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRl
+eHQvaHRtbDsgY2hhcnNldD11dGYtOCI+PC9oZWFkPjxib2R5PjxkaXYgZGlyPSJhdXRvIj5MZWtr
+ZXIgcGl6emE8L2Rpdj48L2JvZHk+PC9odG1sPg==
+
+--=-N1JClhfRvlA9vMoo7kZwTw==--
