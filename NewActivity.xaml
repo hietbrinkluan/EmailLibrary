@@ -209,7 +209,6 @@
                 <InArgument x:TypeArguments="snm:MailMessage">[CType(out_Email, System.Net.Mail.MailMessage)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:SaveMail DisplayName="Save Newest Mail Message" FilePath="[sFileName]" sap:VirtualizedContainerService.HintSize="478.4,129.6" sap2010:WorkflowViewState.IdRef="SaveMail_3" MailMessage="[ConvertedEmail]" />
             <ui:MultipleAssign DisplayName="Assign File Name" sap:VirtualizedContainerService.HintSize="478.4,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
@@ -232,6 +231,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
+            <ui:SaveMail DisplayName="Save Newest Mail Message" FilePath="[sFileName]" sap:VirtualizedContainerService.HintSize="478.4,129.6" sap2010:WorkflowViewState.IdRef="SaveMail_3" MailMessage="[ConvertedEmail]" />
             <ui:LogMessage DisplayName="Convert Log Message" sap:VirtualizedContainerService.HintSize="478.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Mail file converted to MailMessage and downloaded&quot;]" />
           </Sequence>
         </ActivityAction>
