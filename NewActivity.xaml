@@ -179,7 +179,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AQMkADkzOGVhM2EzLTRhN2QtNDdiOS1iZGY2LTQzZTk1YzJiMmIzZgAuAAAD7m4bsnHgU0KEOu6N6myQAAEAcYxz33Myn0mdhIYW9_x0dwAAAgEMAAAA" ConnectionId="0085e767-3a65-43de-aff0-1de9a7f10ed4" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="479,243" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="True" Result="[out_Email]" SelectionMode="Browse" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="False">
+            <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AQMkADkzOGVhM2EzLTRhN2QtNDdiOS1iZGY2LTQzZTk1YzJiMmIzZgAuAAAD7m4bsnHgU0KEOu6N6myQAAEAcYxz33Myn0mdhIYW9_x0dwAAAgEMAAAA" ConnectionId="0085e767-3a65-43de-aff0-1de9a7f10ed4" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="479,243" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="True" Result="[out_Email]" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
               <umam:GetNewestEmail.Filter>
                 <umamf:MailFilterCollection LogicalOperator="And">
                   <umamf:MailFilterCollection.Filters>
