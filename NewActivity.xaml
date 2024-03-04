@@ -6,7 +6,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>732,3028</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>732,2996</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -136,7 +136,7 @@
       <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="636.8,2923.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="636.8,2891.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="umm:Office365Message" Name="out_Email" />
       <Variable x:TypeArguments="x:String" Name="sDestination" />
@@ -156,7 +156,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Start Log" sap:VirtualizedContainerService.HintSize="574.4,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start Message&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="574.4,220" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="574.4,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -175,12 +175,10 @@
               <InArgument x:TypeArguments="x:String">[Environment.CurrentDirectory + "\Emails\"]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
-          <ui:AssignOperation To="{x:Null}" Value="{x:Null}" sap2010:WorkflowViewState.IdRef="AssignOperation_8" />
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uda:GetEntityRecordById x:TypeArguments="e:EmailDetails" ContinueOnError="False" DisplayName="Get Entity Record By Id" EntityId="2bbc1dfb-00d6-ee11-85f9-0022489f653e" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="574.4,185.6" sap2010:WorkflowViewState.IdRef="GetEntityRecordById`1_1" OutputEntity="[dt_DSRecord]" RecordId="98c64807-f3d9-ee11-85f9-000d3adc5c88" TimeoutInMs="30000" />
-    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="Hanu.Engelbrecht@sapconet.co.za" DisplayName="Use Outlook 365" EmailAddress="Hanu.Engelbrecht@sapconet.co.za" sap:VirtualizedContainerService.HintSize="574.4,1200" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_2" UseConnectionService="False">
+    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="Hanu.Engelbrecht@sapconet.co.za" DisplayName="Use Outlook 365" EmailAddress="Hanu.Engelbrecht@sapconet.co.za" sap:VirtualizedContainerService.HintSize="574.4,1385.6" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_2" UseConnectionService="False">
       <umab:ExchangeApplicationCard.ApplicationId>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
@@ -191,17 +189,18 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Exchange" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540.8,935.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540.8,1120.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <uda:GetEntityRecordById x:TypeArguments="e:EmailDetails" ContinueOnError="False" DisplayName="Get Entity Record By Id" EntityId="2bbc1dfb-00d6-ee11-85f9-0022489f653e" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="478.4,185.6" sap2010:WorkflowViewState.IdRef="GetEntityRecordById`1_1" OutputEntity="[dt_DSRecord]" RecordId="98c64807-f3d9-ee11-85f9-000d3adc5c88" TimeoutInMs="30000" />
             <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AAMkADlmYWUwNmFjLWU5YWUtNGY2My04Njg5LWNjMmU3Y2IwMzNhMAAuAAAAAABi0lQMk7JtRJ7CNcLhqRlGAQB9dCvptslzT5BaQMLAVYvgAAAAAAEMAAA=" ConnectionId="d55a5ed4-b7ae-4beb-b24d-23192bfdab90" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="478.4,244" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="False" Result="[out_Email]" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
               <umam:GetNewestEmail.Filter>
                 <umamf:MailFilterCollection LogicalOperator="And">
                   <umamf:MailFilterCollection.Filters>
-                    <umamf:MailFilterElement DateValue="{x:Null}" Criteria="From" DateOperator="NewerThan" InStringValue="[EmailDetails.IncludedSenders.ToString]" StringOperator="Contains" TypeOperator="Equals" TypeValue="Email" />
+                    <umamf:MailFilterElement DateValue="{x:Null}" Criteria="From" DateOperator="NewerThan" InStringValue="[dt_DSRecord.IncludedSenders.ToString]" StringOperator="Contains" TypeOperator="Equals" TypeValue="Email" />
                   </umamf:MailFilterCollection.Filters>
                 </umamf:MailFilterCollection>
               </umam:GetNewestEmail.Filter>
