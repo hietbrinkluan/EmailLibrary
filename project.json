@@ -4,6 +4,7 @@
   "description": "More efficient email library",
   "main": "NewActivity.xaml",
   "dependencies": {
+    "UiPath.DataService.Activities": "23.10.0",
     "UiPath.Mail.Activities": "1.22.1",
     "UiPath.MicrosoftOffice365.Activities": "2.5.7",
     "UiPath.System.Activities": "24.2.0-preview",
@@ -16,7 +17,7 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "DefaultTenant",
       "namespace": "EmailLibraryNew",
-      "uniqueReference": "C/s4u25DFP4rbtf2wo/gJ89vo5AKh+59TsdTs+j+kr0="
+      "uniqueReference": "nQFg0PW0zGiOyaPIXxliC+zblQVqYeoFkuaNy/mfASw="
     }
   ],
   "schemaVersion": "4.0",
