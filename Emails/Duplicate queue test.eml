@@ -1,0 +1,128 @@
+Uid: =?utf-8?q?AAMkADlmYWUwNmFjLWU5YWUtNGY2My04Njg5LWNjMmU3Y2IwMzNhMABGAAAAA?=
+ =?utf-8?q?ABi0lQMk7JtRJ7CNcLhqRlGBwB9dCvptslzT5BaQMLAVYvgAAAAAAEMAAB9dC?=
+ =?utf-8?q?vptslzT5BaQMLAVYvgAABAFRKoAAA=3D?=
+Received: by mail-pf1-f180.google.com with SMTP
+	id d2e1a72fcca58-6e46dcd8feaso2308758b3a .2        for
+	<hanu.engelbrecht@sapconet.co.za>; Mon, 04 Mar 2024 04:51:13 -0800 (PST)
+Authentication-Results:
+	spf=pass (sender IP is 209.85.210.180) smtp.mailfrom=gmail.com;
+	dkim=pass (signature was verified) header.d=gmail.com;
+	dmarc=pass action="none" header.from=gmail.com; compauth=pass reason="100"
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.210.180 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.210.180; helo=mail-pf1-f180.google.com; pr=C
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20230601;
+	t=1709556670; x=1710161470; darn=sapconet.co.za;
+	h=to:subject:message-id:date:from:mime-version:from:to:cc:subject:date:
+	message-id:reply-to;
+	bh=SD5cW1YZnp+rldU2Jfk0g7pET+646ar4TnVj9+19tnA=;
+	b=cDADe8ghpoFiKiA0WQgNd8XzW1MtWClftbkdevpMNxWKbXpIChR1dFVfVqb5S1oRF12Q0jxkW2I
+	IXpx2OvcX/v/+04vBiq4r3ThbCxn1f5wtsz87fP0ZF85IRlTGJDOxTNBDaSzhmjFjfDQlMiocsAG7
+	hpjW57D3/NKtM9EX6TKxv1L9YNyHrosNymxFVtA8xN4M6ycvw4cM23yVy/IcuNsX5+D14yL4qy1ke
+	UQSx9SlXKWgIi6ywMIJ7RK3Oi3rivi2YCNFHd7bYIhvDYeNOE/PRirbVpLwypiwwQs9q009OBg7K+
+	UiFmzj8q2oTsr1nMRfnRZ/I88ED1CdYp4Uuw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20230601; t=1709556670; x=1710161470;       
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state        
+ :from:to:cc:subject:date:message-id:reply-to;       
+ bh=SD5cW1YZnp+rldU2Jfk0g7pET+646ar4TnVj9+19tnA=;       
+ b=gSRUkz3QyQQaY1MVOJFteKPaq4UY0fTxoxj32jayCQPfPF06x8xW5TidG9adbuUgWE        
+ 5klekDcQaPwraz3I7lO1nUgyiHpyRNcWp+Ji6Oyx+595zsdx3R4Lhs0oARU3dCNinLAq        
+ 1y5YGBmnc0VavUwmol3dqKndMiHSxUkVjd9+UjU2p9LQuRGFrwVBDwaEkeJIH4qwKqG2        
+ C3WfCARguL5MqCBFfV2XRSPbQXCib1KaHhlAB4wk4UH9C18/fX8quihwUrYesnNfBTwN        
+ HT9x7WLRDID/BgKVLLA9M4uifm1g6bLd+OS4LD8ayz5M5D8W34LFqXkjavrTnqkPBHl1        
+ XCPg==
+X-Gm-Message-State: AOJu0YyypLmHRczW5oWk2Y9EeRS5NinyP5nBa67OFxWh2rawGK8nBm7g
+	wUgT6iRadaBhHeKtNUd7t3wAsltfOZNj/0XPGgdXZ0TyL9FMFe/annwfW024It4JC1JpEmuGPhe
+	rbZ9YlrZFjZXmgojObwyatvgPpa77S1ck
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IGQQ+SNv=2FI+2b7ZQPhOfmDc7dxj1e9FLDJUgh1xg15kQU5JR5moXawWP?=
+ =?utf-8?q?tgz1sOlOA0WDNF9GESfX3MRa=2FZO1a8=3D?=
+X-Received: by 2002:a05:6a00:929a:b0:6e6:2462:d66 with SMTP id
+ jw26-20020a056a00929a00b006e624620d66mr2649687pfb.3.1709556670374; Mon, 04
+ Mar 2024 04:51:10 -0800 (PST)
+MIME-Version: 1.0
+From: Hanu Engelbrecht <engelbrecht.hanu@gmail.com>
+Date: Mon, 4 Mar 2024 14:50:59 +0200
+Message-ID: <CAEn_zKjpzN=Ebgp5AQs5N25e-mn2Wfcv0=D81Xn6rmdkq=NtLw@mail.gmail.com>
+Subject: Duplicate queue test
+To: Hanu Engelbrecht <Hanu.Engelbrecht@sapconet.co.za>
+Return-Path: engelbrecht.hanu@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Mar 2024 12:51:13.6285
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 90b48e51-09b2-4726-60a5-08dc3c49c642
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 1bedeeba-8b6d-4e9b-b4a4-18bca8bcee90:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CPT0EPF0000071C:EE_|CP7P275MB1378:EE_|JN3P275MB2348:EE_
+X-MS-Exchange-Organization-AuthSource: CPT0EPF0000071C.ZAFP275.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 90b48e51-09b2-4726-60a5-08dc3c49c642
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report: =?utf-8?q?CIP=3A209=2E85=2E210=2E180=3BCTRY=3AUS=3BLANG=3Aen=3BSCL=3A1=3BSRV=3A=3BIPV=3ANLI=3BSFV=3ANSP?=
+ =?utf-8?q?M=3BH=3Amail-pf1-f180=2Egoogle=2Ecom=3BPTR=3Amail-pf1-f180=2Egoogle=2Ecom=3BCAT?=
+ =?utf-8?q?=3ANONE=3BSFS=3A=2813230031=29=3BDIR=3AINB=3B?=
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Mar 2024 12:51:13.4567 (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 90b48e51-09b2-4726-60a5-08dc3c49c642
+X-MS-Exchange-CrossTenant-Id: 1bedeeba-8b6d-4e9b-b4a4-18bca8bcee90
+X-MS-Exchange-CrossTenant-AuthSource: CPT0EPF0000071C.ZAFP275.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CP7P275MB1378
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9192377
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7339.034
+X-Microsoft-Antispam-Mailbox-Delivery: =?utf-8?q?ucf=3A0=3Bjmr=3A0=3Bauth=3A0=3Bdest=3AI=3BENG=3A=28910001=29=28944506478=29=28944626604=29=28?=
+ =?utf-8?q?920097=29=28930097=29=28140003=29=3B?=
+X-Microsoft-Antispam-Message-Info: =?utf-8?q?lh3QPuAcFcnmIN9IRGlI7khFZb9kVdZvVm8qVEyEUHNesA9sM3b+Hc+jAtgfZ?=
+ =?utf-8?q?RnkpquDTmb9dxlAfzsTTQMk9hIWTC5A7bcbQ6zpgD28J8xGXpBxhHMVeaPsGu?=
+ =?utf-8?q?7K=2FBVBatyBXMoP4VYN0klUPrHNQOhWKrM8IBb4dBMC9G6wLypRk+hUsbAY8ew?=
+ =?utf-8?q?VRJM4fv8PxgYxYMWKCZE8xlVcqkW165ReCfis9H7giupTycaJ3SFLM9JmORjc?=
+ =?utf-8?q?Ble9fjX4lUpjUjp8CRn3CW21HWWDoMzO2dhFZ=2FHhKcL23SkLWyeNqAeAxlfvF?=
+ =?utf-8?q?qMGzSCLQBuM4cpgV3DPA2wQO5tq9G9HI4CEDb+m4XQyXbMXLxA9QaHFEirogt?=
+ =?utf-8?q?yhyf6x1JV5+6Gvi63=2FEuK8oehc1XBVWkGwq46f6GMnRrmQemuhSQjC47PsKRg?=
+ =?utf-8?q?jo4rNDgANsfuRkmrrde8nXt7MzfFH5ZshFzS76BSuhAqWKqyz36jekXY+6wFM?=
+ =?utf-8?q?m9xe2lwGKEhoeuNBDaK+CL01nanxP5rX1LuoMYbp9Jjff5HcAnIzcXKg2ojZX?=
+ =?utf-8?q?vcMkWgNHPmjJnKzDwdDSZ2xA2e3cP6fge2PL+9Vk9B08wD9ovudRusIa5m+X6?=
+ =?utf-8?q?di9XIJkvw62h9NDL=2FSh1R5A7RK3F7zVS7VoLu3X0KR+ERyV2rV7ifbZZxLx3h?=
+ =?utf-8?q?GgiTy5p8VfkYZ74jVKiIGma0=2FcSQWwzeFWYNhipsOPsetXyMdum9L5qPPOWQY?=
+ =?utf-8?q?MeD1NQH9=2FtLoT9pXnfTYFdFV+GmPgzAlnQhEA72WV7XwDN0g2048PoA5mqd1o?=
+ =?utf-8?q?GWquPwpdjRVxbZfnvJaW5u63FxOdSZaQYdM0MPBIj1ZF8gN9jEkefjQoKHY1K?=
+ =?utf-8?q?5uDjkuOju2p8eQ1MBEhATY1fkCfslDcdNICymm4WGU718DWlt+0YRQgpvOWqT?=
+ =?utf-8?q?Oy+I6UbYH8UJi9oQgm1v3O3Dza1msHeSRibZWYCGtF0H4yoLmr=2Fp6u3h=2FInbj?=
+ =?utf-8?q?=2Fwbo0aEkyIqucON7FxuaVn6MwnJv8yP4ZqmxjxCqj7LS6rdY+yq75czwBRgpH?=
+ =?utf-8?q?SR3HlCiCONwLz5+PWMH7YW5Hjxk8tDu4zP+A8mptGoxIZ3fKryiNkCpPMPrce?=
+ =?utf-8?q?4D4cC1SUOBv77KlCyDywUZ4gUTLQoH4e12xLdTuTo0UeSJtPBce1QpyB=2FP05f?=
+ =?utf-8?q?BKY9yvp+qT66qSAfXkfTAqopJOdSbo=2FqP65m=2FQSdkwkye7ZVZ0VawVuwuB3ns?=
+ =?utf-8?q?c3s2UL1dyG4kF+OevA5TeAPM2S+DqvjhVP0E1GGFtJxfvG6gYohcUXJwpkmQv?=
+ =?utf-8?q?DAIe+GY8evw9f4p5yB5R6bd2ihi3mKzXMyJZXrddhThU3UK9aBfWjmSI7TTYz?=
+ =?utf-8?q?gu1HUT1tpn84fCFpi7aiE7YJ0Pe86yGU+vaezb2oKrSrXHfPyjBJgsJoU27ew?=
+ =?utf-8?q?q6jdmaZS+hWrSwQx+BSFtOgQYuoUOKoZVROXnCamTITSqejClb=2FkKXM8J=2F4tC?=
+ =?utf-8?q?zTBF8N5wqv3dnjk2ifT+VHmKc4oxYchPwT195L5khNQYxfSnSJgwSz2O=2FGOEO?=
+ =?utf-8?q?TLIhcwXGuT3yQEf6qvvpKlUPcZre8FsC7RtJK5JPjttCYP5o5Fl0m1I=2F5yDQy?=
+ =?utf-8?q?B3QR1E+OX1olXH5suitQMLRzGJKo7AWLuTmHBg84h3POGFzXFZ2nSkUtZGgnA?=
+ =?utf-8?q?h4y6HInwfIXVgFfWrhQUhC3qYVISTqAxRRCeGJ0DkNdczPgSazpwY7FGQzwhd?=
+ =?utf-8?q?F9d0QA+oS7Gvj0mzAj5OBa996aRKc5OwQlTTk77Eh4QqxQApCkVIf3mWWq4Lj?=
+ =?utf-8?q?iY=3D?=
+Sender: Hanu Engelbrecht <engelbrecht.hanu@gmail.com>
+Content-Type: multipart/alternative; boundary="=-gXSzfXHgot9xa975tVwVeA=="
+
+--=-gXSzfXHgot9xa975tVwVeA==
+Content-Type: text/plain; charset=us-ascii
+
+Testing queue duplication of path storage
+
+--=-gXSzfXHgot9xa975tVwVeA==
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+Content-Id: <b6a23f9c-529c-4f1a-a8b4-9c3761a4653c>
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRl
+eHQvaHRtbDsgY2hhcnNldD11dGYtOCI+PC9oZWFkPjxib2R5PjxkaXYgZGlyPSJhdXRvIj5UZXN0
+aW5nIHF1ZXVlIGR1cGxpY2F0aW9uIG9mIHBhdGggc3RvcmFnZSZuYnNwOzwvZGl2PjwvYm9keT48
+L2h0bWw+
+
+--=-gXSzfXHgot9xa975tVwVeA==--
