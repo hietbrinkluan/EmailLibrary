@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:e="clr-namespace:EmailLibraryNew;assembly=DataService.EmailLibraryNew" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:e="clr-namespace:EmailLibraryNew;assembly=DataService.EmailLibraryNew" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="EmailDetails" Type="InArgument(e:EmailDetails)" />
   </x:Members>
@@ -6,7 +6,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1208,3790</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>732,3923.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -18,6 +18,7 @@
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Linq</x:String>
       <x:String>System.Net.Mail</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.Serialization</x:String>
@@ -25,6 +26,7 @@
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>UiPath.Core.Activities.Orchestrator</x:String>
       <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.DataService.Activities</x:String>
       <x:String>UiPath.DataService.Definition</x:String>
       <x:String>UiPath.Mail</x:String>
       <x:String>UiPath.Mail.Activities</x:String>
@@ -43,7 +45,8 @@
       <x:String>UiPath.Shared.Activities.Utils</x:String>
       <x:String>UiPath.Shared.Services.Graph.Mail.Contracts</x:String>
       <x:String>UiPath.Shared.Services.Graph.Mail.Models</x:String>
-      <x:String>UiPath.DataService.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -114,7 +117,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="637,3725" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="637.6,3858.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="umm:Office365Message" Name="out_Email" />
       <Variable x:TypeArguments="x:String" Name="sDestination" />
@@ -129,8 +132,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Start Log" sap:VirtualizedContainerService.HintSize="575,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start Message&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="575,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Start Log" sap:VirtualizedContainerService.HintSize="575.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start Message&quot;]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="575.2,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -152,7 +155,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="Hanu.Engelbrecht@sapconet.co.za" DisplayName="Use Outlook 365" EmailAddress="Hanu.Engelbrecht@sapconet.co.za" sap:VirtualizedContainerService.HintSize="575,2230" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_2" UseConnectionService="False">
+    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="Hanu.Engelbrecht@sapconet.co.za" DisplayName="Use Outlook 365" EmailAddress="Hanu.Engelbrecht@sapconet.co.za" sap:VirtualizedContainerService.HintSize="575.2,2360.8" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_2" UseConnectionService="False">
       <umab:ExchangeApplicationCard.ApplicationId>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
@@ -163,7 +166,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Exchange" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do Process email" sap:VirtualizedContainerService.HintSize="541,1968" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do Process email" sap:VirtualizedContainerService.HintSize="541.6,2096" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IList(e:EmailDetails)" Name="ListOfEmails" />
               <Variable x:TypeArguments="x:String" Name="Sender" />
@@ -173,7 +176,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uda:QueryEntityRecords x:TypeArguments="e:EmailDetails" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="479,180" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[ListOfEmails]" QueriedEntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
+            <uda:QueryEntityRecords x:TypeArguments="e:EmailDetails" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="479.2,180.8" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[ListOfEmails]" QueriedEntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
               <uda:QueryEntityRecords.FilterArguments>
                 <uda:FilterArgument FilterActivityType="{x:Null}">
                   <uda:FilterArgument.Filter>
@@ -196,8 +199,8 @@
                 </scg:List>
               </uda:QueryEntityRecords.FilterValues>
             </uda:QueryEntityRecords>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[ListOfEmails]" />
-            <Assign sap:VirtualizedContainerService.HintSize="479,122" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[ListOfEmails]" />
+            <Assign sap:VirtualizedContainerService.HintSize="479.2,121.6" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[Sender]</OutArgument>
               </Assign.To>
@@ -205,36 +208,56 @@
                 <InArgument x:TypeArguments="x:String">[ListOfEmails.Item(0).IncludedSenders.ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[Sender]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,371" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[Sender]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479.2,373.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,255.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uda:GetEntityRecordById x:TypeArguments="e:EmailDetails" ContinueOnError="False" DisplayName="Get Entity Record By Id" EntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="354,167" sap2010:WorkflowViewState.IdRef="GetEntityRecordById`1_1" OutputEntity="[EmailDetails]" RecordId="98c64807-f3d9-ee11-85f9-000d3adc5c88" TimeoutInMs="30000" />
+                  <uda:GetEntityRecordById x:TypeArguments="e:EmailDetails" ContinueOnError="False" DisplayName="Get Entity Record By Id" EntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="353.6,168.8" sap2010:WorkflowViewState.IdRef="GetEntityRecordById`1_1" OutputEntity="[EmailDetails]" RecordId="98c64807-f3d9-ee11-85f9-000d3adc5c88" TimeoutInMs="30000" />
                 </Sequence>
               </ui:CommentOut.Body>
             </ui:CommentOut>
-            <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AAMkADlmYWUwNmFjLWU5YWUtNGY2My04Njg5LWNjMmU3Y2IwMzNhMAAuAAAAAABi0lQMk7JtRJ7CNcLhqRlGAQB9dCvptslzT5BaQMLAVYvgAAAAAAEMAAA=" ConnectionId="0f311275-0a39-4d79-a759-a85226cc3cb1" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="479,243" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="False" Result="[out_Email]" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
-              <umam:GetNewestEmail.Filter>
-                <umamf:MailFilterCollection LogicalOperator="And">
-                  <umamf:MailFilterCollection.Filters>
-                    <umamf:MailFilterElement DateValue="{x:Null}" Criteria="From" DateOperator="NewerThan" InStringValue="[Sender]" StringOperator="Contains" TypeOperator="Equals" TypeValue="Email" />
-                  </umamf:MailFilterCollection.Filters>
-                </umamf:MailFilterCollection>
-              </umam:GetNewestEmail.Filter>
-              <umam:GetNewestEmail.FolderIdBackup>
-                <usau:BackupSlot x:TypeArguments="umame:ItemSelectionMode" StoredValue="Browse">
-                  <usau:BackupSlot.BackupValues>
-                    <scg:Dictionary x:TypeArguments="umame:ItemSelectionMode, scg:List(x:Object)" />
-                  </usau:BackupSlot.BackupValues>
-                </usau:BackupSlot>
-              </umam:GetNewestEmail.FolderIdBackup>
-            </umam:GetNewestEmail>
-            <Assign DisplayName="Message type conversion" sap:VirtualizedContainerService.HintSize="479,122" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="479.2,365.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch.Try>
+                <umam:GetNewestEmail ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Inbox" BrowserFolderId="AAMkADlmYWUwNmFjLWU5YWUtNGY2My04Njg5LWNjMmU3Y2IwMzNhMAAuAAAAAABi0lQMk7JtRJ7CNcLhqRlGAQB9dCvptslzT5BaQMLAVYvgAAAAAAEMAAA=" ConnectionId="ca8c0b4d-8cbc-4297-98ca-d6cb9f0ef435" DisplayName="Get Newest Email" sap:VirtualizedContainerService.HintSize="334.4,204" sap2010:WorkflowViewState.IdRef="GetNewestEmail_1" Importance="Any" MarkAsRead="False" Result="[out_Email]" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+                  <umam:GetNewestEmail.Filter>
+                    <umamf:MailFilterCollection LogicalOperator="And">
+                      <umamf:MailFilterCollection.Filters>
+                        <umamf:MailFilterElement DateValue="{x:Null}" Criteria="From" DateOperator="NewerThan" InStringValue="[Sender]" StringOperator="Contains" TypeOperator="Equals" TypeValue="Email" />
+                      </umamf:MailFilterCollection.Filters>
+                    </umamf:MailFilterCollection>
+                  </umam:GetNewestEmail.Filter>
+                  <umam:GetNewestEmail.FolderIdBackup>
+                    <usau:BackupSlot x:TypeArguments="umame:ItemSelectionMode" StoredValue="Browse">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:Dictionary x:TypeArguments="umame:ItemSelectionMode, scg:List(x:Object)" />
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </umam:GetNewestEmail.FolderIdBackup>
+                </umam:GetNewestEmail>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,161.6" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Throw Exception="[new BusinessRuleException(&quot;No Unread Emails Found&quot;)]" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <Assign DisplayName="Message type conversion" sap:VirtualizedContainerService.HintSize="479.2,121.6" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="snm:MailMessage">[ConvertedEmail]</OutArgument>
               </Assign.To>
@@ -242,7 +265,7 @@
                 <InArgument x:TypeArguments="snm:MailMessage">[CType(out_Email, System.Net.Mail.MailMessage)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:MultipleAssign DisplayName="Assign File Name" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign DisplayName="Assign File Name" sap:VirtualizedContainerService.HintSize="479.2,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -264,7 +287,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:SaveMail DisplayName="Save Newest Mail Message" FilePath="[sPath]" sap:VirtualizedContainerService.HintSize="479,132" sap2010:WorkflowViewState.IdRef="SaveMail_3" MailMessage="[ConvertedEmail]" />
+            <ui:SaveMail DisplayName="Save Newest Mail Message" FilePath="[sPath]" sap:VirtualizedContainerService.HintSize="479.2,129.6" sap2010:WorkflowViewState.IdRef="SaveMail_3" MailMessage="[ConvertedEmail]" />
             <ui:LogMessage DisplayName="Convert Log Message" sap:VirtualizedContainerService.HintSize="479,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Mail file converted to MailMessage and downloaded&quot;]" />
           </Sequence>
         </ActivityAction>
