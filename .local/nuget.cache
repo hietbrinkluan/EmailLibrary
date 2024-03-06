@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O4u2rJIiTEaVD4hUE3M2WYCB/rG5UnvYD9kQ0+03WTyrAI+wAIAQJ58eprRMlQ4TTQH+cPrzlAvojWOqCCwZCQ==",
+  "dgSpecHash": "JabWKKlbE0/Khju5Vrt8M4ISxVQ99sXsqS+2nXtTKLsdUbixzuVb9wrfMmFXS9oduC5A275FoTQCnSy8oBUbOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\luanh\\OneDrive - Sapconet (Pty) Ltd\\Documents\\UiPath\\EmailLibraryNew\\.local\\",
   "expectedPackageFiles": [
@@ -266,6 +266,7 @@
     "C:\\Users\\luanh\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\luanh\\.nuget\\packages\\uipath.codedworkflows\\24.2.0-alpha.4786647\\uipath.codedworkflows.24.2.0-alpha.4786647.nupkg.sha512",
     "C:\\Users\\luanh\\.nuget\\packages\\uipath.connectionclient\\1.4.8\\uipath.connectionclient.1.4.8.nupkg.sha512",
+    "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0\\uipath.dataservice.activities.23.10.0.nupkg.sha512",
     "C:\\Users\\luanh\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
     "C:\\Users\\luanh\\.nuget\\packages\\uipath.mail.activities\\1.22.1\\uipath.mail.activities.1.22.1.nupkg.sha512",
     "C:\\Users\\luanh\\.nuget\\packages\\uipath.microsoftoffice365.activities\\2.5.7\\uipath.microsoftoffice365.activities.2.5.7.nupkg.sha512",
