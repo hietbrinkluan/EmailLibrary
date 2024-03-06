@@ -204,7 +204,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uda:QueryEntityRecords x:TypeArguments="e:EmailDetails" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="479,180" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[ListOfEmails]" QueriedEntityId="2bbc1dfb-00d6-ee11-85f9-0022489f653e" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
+            <uda:QueryEntityRecords x:TypeArguments="e:EmailDetails" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="479,180" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[ListOfEmails]" QueriedEntityId="f5f4099f-a2d4-ee11-85f9-000d3adf1489" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
               <uda:QueryEntityRecords.FilterArguments>
                 <uda:FilterArgument FilterActivityType="{x:Null}">
                   <uda:FilterArgument.Filter>
