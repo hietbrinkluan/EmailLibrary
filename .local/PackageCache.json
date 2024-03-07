@@ -2,17 +2,6 @@
   "Packages": [
     {
       "Package": {
-        "Id": "UiPath.DataService.Activities",
-        "Version": "23.10.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0\\lib/net6.0-windows7.0/UiPath.DataService.Activities.Core.dll",
-        "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0\\lib/net6.0-windows7.0/UiPath.DataService.Activities.Design.dll"
-      ],
-      "Path": "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0"
-    },
-    {
-      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.22.1"
       },
@@ -4279,11 +4268,6 @@
         }
       ]
     },
-    "UiPath.DataService.Activities": {
-      "Id": "UiPath.DataService.Activities",
-      "Version": "23.10.0",
-      "Dependencies": []
-    },
     "UiPath.ImageProcessing": {
       "Id": "UiPath.ImageProcessing",
       "Version": "23.4.0",
@@ -7310,17 +7294,6 @@
         "C:\\Users\\luanh\\.nuget\\packages\\uipath.connectionclient\\1.4.8\\lib\\net5.0\\ConnectionClient.dll"
       ],
       "Path": "C:\\Users\\luanh\\.nuget\\packages\\uipath.connectionclient\\1.4.8"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.DataService.Activities",
-        "Version": "23.10.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0\\lib\\net6.0-windows7.0\\UiPath.DataService.Activities.Core.dll",
-        "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0\\lib\\net6.0-windows7.0\\UiPath.DataService.Activities.Design.dll"
-      ],
-      "Path": "C:\\Users\\luanh\\.nuget\\packages\\uipath.dataservice.activities\\23.10.0"
     },
     {
       "Package": {
