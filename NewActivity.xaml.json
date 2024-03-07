@@ -16,6 +16,30 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "in_OrchestratorFolder",
+      "DisplayName": "in_OrchestratorFolder",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_QueueName",
+      "DisplayName": "in_QueueName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }
