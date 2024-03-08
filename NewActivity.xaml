@@ -3,6 +3,14 @@
     <x:Property Name="in_MessageResult" Type="InArgument(umm:Office365Message)" />
     <x:Property Name="in_OrchestratorFolder" Type="InArgument(x:String)" />
     <x:Property Name="in_QueueName" Type="InArgument(x:String)" />
+    <x:Property Name="in_ExcludedSenders" Type="InArgument(x:String)" />
+    <x:Property Name="in_IncludedSenders" Type="InArgument(x:String)" />
+    <x:Property Name="In_IncludeReadEmail" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_Subject" Type="InArgument(x:String)" />
+    <x:Property Name="in_FullMatch" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_MarkAsRead" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_TopCount" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_TargetInbox" Type="InArgument(x:String)" />
   </x:Members>
   <this:Main.in_MessageResult>
     <InArgument x:TypeArguments="umm:Office365Message" />
@@ -11,7 +19,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1208,2147</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1514,1905</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -121,7 +129,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="541,2082" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="541,1840" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sDestination" />
       <Variable x:TypeArguments="x:String" Name="sPath" />
@@ -135,8 +143,6 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Start Log" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Start Email Library&quot;]" />
-    <ui:LogMessage DisplayName="Log Arguments" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[in_OrchestratorFolder + &quot;*&quot;]" />
-    <ui:LogMessage DisplayName="Log Arguments" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[in_QueueName + &quot;*&quot;]" />
     <ui:MultipleAssign DisplayName="All File Name And Path Variables Assign" sap:VirtualizedContainerService.HintSize="479,280" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
@@ -188,11 +194,12 @@
     <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[sBucketSaveAs]" DisplayName="Upload to EmailFiles" sap:VirtualizedContainerService.HintSize="479,279" sap2010:WorkflowViewState.IdRef="UploadStorageFile_3" Path="[sPath]" StorageBucketName="[sBucketName]" />
     <ui:LogMessage DisplayName="Upload Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File uploaded to storage bucket&quot;]" />
     <ui:LogMessage DisplayName="Queue Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Adding .eml location to queue&quot;]" />
-    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add .eml details to Queue " FolderPath="[in_OrchestratorFolder]" sap:VirtualizedContainerService.HintSize="479,217" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_QueueName]">
+    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add .eml details to Queue " FolderPath="[in_OrchestratorFolder]" sap:VirtualizedContainerService.HintSize="479,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_QueueName]">
       <ui:AddQueueItem.ItemInformation>
         <InArgument x:TypeArguments="x:String" x:Key="StorageBucketName">[sBucketName]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="FileName">[sBucketSaveAs]</InArgument>
       </ui:AddQueueItem.ItemInformation>
     </ui:AddQueueItem>
+    <ui:DeleteFileX DisplayName="Delete Local File" sap:VirtualizedContainerService.HintSize="479,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[sPath]" />
   </Sequence>
 </Activity>
