@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestEmailDownloadAndUpload" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="850.4,600.8" sap2010:WorkflowViewState.IdRef="TestEmailDownloadAndUpload_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestEmailDownloadAndUpload" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="860,600.8" sap2010:WorkflowViewState.IdRef="TestEmailDownloadAndUpload_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -78,16 +78,16 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailDownloadAndUpload.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="353.6,136.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EmailDownloadAndUpload.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="umm:Office365Message" x:Key="in_MessageResult" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolder">EmailIntegration</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_QueueName">Test</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolder" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_QueueName" />
         <InArgument x:TypeArguments="x:String" x:Key="in_ExcludedSenders" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_IncludedSenders">engelbrecht.hanu@gmail.com</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_IncludedSenders" />
         <InArgument x:TypeArguments="x:Boolean" x:Key="In_IncludeReadEmail" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_Subject">Pizza</InArgument>
-        <InArgument x:TypeArguments="x:Boolean" x:Key="in_FullMatch">False</InArgument>
-        <InArgument x:TypeArguments="x:Boolean" x:Key="in_MarkAsRead">True</InArgument>
-        <InArgument x:TypeArguments="x:Int32" x:Key="in_TopCount">20</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_TargetInbox">Inbox</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Subject" />
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_FullMatch" />
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_MarkAsRead" />
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_TopCount" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_TargetInbox" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
