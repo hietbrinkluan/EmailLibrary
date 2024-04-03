@@ -21481,15 +21481,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luanh\\.nuget\\packages\\": {}
+    "C:\\Users\\Hanuw\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "EmailLibraryNew",
       "projectName": "EmailLibraryNew",
-      "projectPath": "C:\\Users\\luanh\\OneDrive - Sapconet (Pty) Ltd\\Documents\\UiPath\\EmailLibraryNew\\.local",
-      "packagesPath": "C:\\Users\\luanh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luanh\\OneDrive - Sapconet (Pty) Ltd\\Documents\\UiPath\\EmailLibraryNew\\.local"
+      "projectPath": "C:\\Users\\Hanuw\\OneDrive - Sapconet (Pty) Ltd\\Documents\\SAPPI\\EmailLibrary\\.local",
+      "packagesPath": "C:\\Users\\Hanuw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hanuw\\OneDrive - Sapconet (Pty) Ltd\\Documents\\SAPPI\\EmailLibrary\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -21520,7 +21520,7 @@
             "version": "[24.2.0-preview, 24.2.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\luanh\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Hanuw\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
