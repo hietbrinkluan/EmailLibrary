@@ -33,6 +33,24 @@
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "EmailDownloadAndUpload.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sDestination&Sequence_1",
+        "sPath&Sequence_1",
+        "ConvertedEmail&Sequence_1",
+        "sBucketSaveAs&Sequence_1",
+        "sBucketName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_MessageResult",
+        "in_OrchestratorFolder",
+        "in_QueueName"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }

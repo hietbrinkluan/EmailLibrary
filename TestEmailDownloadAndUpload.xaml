@@ -33,7 +33,11 @@
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -42,29 +46,27 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
-      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TestEmailDownloadAndUpload" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -76,32 +78,16 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailDownloadAndUpload.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="353.6,136.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EmailDownloadAndUpload.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="umm:Office365Message" x:Key="in_MessageResult" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolder">
-          <Literal x:TypeArguments="x:String">EmailIntegration</Literal>
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_QueueName">
-          <Literal x:TypeArguments="x:String">Test</Literal>
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolder">EmailIntegration</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_QueueName">Test</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_ExcludedSenders" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_IncludedSenders">
-          <Literal x:TypeArguments="x:String">engelbrecht.hanu@gmail.com</Literal>
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_IncludedSenders">engelbrecht.hanu@gmail.com</InArgument>
         <InArgument x:TypeArguments="x:Boolean" x:Key="In_IncludeReadEmail" />
-        <InArgument x:TypeArguments="x:String" x:Key="in_Subject">
-          <Literal x:TypeArguments="x:String">Pizza</Literal>
-        </InArgument>
-        <InArgument x:TypeArguments="x:Boolean" x:Key="in_FullMatch">
-          <Literal x:TypeArguments="x:Boolean" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:Boolean" x:Key="in_MarkAsRead">
-          <Literal x:TypeArguments="x:Boolean" Value="True" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:Int32" x:Key="in_TopCount">
-          <Literal x:TypeArguments="x:Int32" Value="20" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_TargetInbox">
-          <Literal x:TypeArguments="x:String">Inbox</Literal>
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Subject">Pizza</InArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_FullMatch">False</InArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_MarkAsRead">True</InArgument>
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_TopCount">20</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_TargetInbox">Inbox</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
