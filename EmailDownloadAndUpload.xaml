@@ -194,7 +194,6 @@
     <ui:LogMessage DisplayName="Queue Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Adding .eml location to queue&quot;]" />
     <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add .eml details to Queue " FolderPath="[in_OrchestratorFolder]" sap:VirtualizedContainerService.HintSize="479,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[in_QueueName]">
       <ui:AddQueueItem.ItemInformation>
-        <InArgument x:TypeArguments="x:String" x:Key="StorageBucketName">[sBucketName]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="FileName">[sBucketSaveAs]</InArgument>
       </ui:AddQueueItem.ItemInformation>
     </ui:AddQueueItem>
