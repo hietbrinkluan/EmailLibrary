@@ -53,10 +53,10 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "4b34e22d-03a4-45f3-a93a-3b80f099f5e5",
+        "testCaseId": "9f94874f-614c-4bef-b3f4-fc349d2a151c",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestEmailDownloadAndUpload.xaml"
+        "fileName": "EmailDownloadAndUploadTestCase.xaml"
       }
     ],
     "saveToCloud": false

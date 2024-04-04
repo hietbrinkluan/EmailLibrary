@@ -1,6 +1,0 @@
-Queue structure: 
-
-[Key, Value]
-
-StorageBucketName: example,
-FileName: example.eml
