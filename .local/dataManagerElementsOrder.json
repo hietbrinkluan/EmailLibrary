@@ -43,6 +43,26 @@
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "EmailFunctionality.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueriedRecords&Sequence_1",
+        "Subject&Sequence_1",
+        "EmailID&Sequence_1",
+        "EmailFolder&Sequence_1",
+        "ReceivedEmail&Sequence_1",
+        "FullCheck&Sequence_1",
+        "EmailAd&Sequence_1",
+        "TotalRecords&Sequence_1",
+        "RecordsToRemove&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ReceivedEmail"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }
