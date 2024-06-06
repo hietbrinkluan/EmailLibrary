@@ -30,6 +30,7 @@
       "Path": "EmailDownloadAndUpload.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "OrchFolder&Sequence_1",
         "sDestination&Sequence_1",
         "sPath&Sequence_1",
         "ConvertedEmail&Sequence_1",
